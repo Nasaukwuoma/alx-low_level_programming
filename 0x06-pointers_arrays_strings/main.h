@@ -1,8 +1,39 @@
+
+besthor
+/
+alx-low_level_programming
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+alx-low_level_programming/0x06-pointers_arrays_strings/main.h
+@besthor
+besthor a function that prints an integer
+ 1 contributor
+Executable File  22 lines (19 sloc)  551 Bytes
+#ifndef MAIN_H_INCLUDED
+#define MAIN_H_INCLUDED
+
+/**
+ * void prototypes()
+ * int prototypes()
+ */
+
 char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *src, int n);
 char *_strncpy(char *dest, char *src, int n);
 int _strcmp(char *s1, char *s2);
 void reverse_array(int *a, int n);
-char *string_toupper(char *s);
-char *cap_string(char *s);
-char *leet(char *s);
+char *string_toupper(char *);
+char *cap_string(char *);
+char *rot13(char *);
+void print_number(int n);
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
+void print_buffer(char *b, int size);
+int _putchar(char c);
+
+#endif /* MAIN_H_INCLUDED */
