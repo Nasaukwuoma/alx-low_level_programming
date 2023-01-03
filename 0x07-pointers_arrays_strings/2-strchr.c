@@ -1,12 +1,13 @@
-trchr - a function that locates a character in a string
- *
- *  * @s: pointer to our string array input
- *   * @c: character to locate from input array
- *    *
- *     * Return: first occurence of charatcer or null if not found
- *     */
+/**
+ ** _strchr - a function that locates a character in a string
+ **
+ ** @s: pointer to our string array input
+ ** @c: character to locate from input array
+ **
+ ** Return: first occurence of charatcer or null if not found
+ **/
 
- char *_strchr(char *s, char c)
+char *_strchr(char *s, char c)
 {
 		while (*s != '\0')
 				{
@@ -24,3 +25,4 @@ trchr - a function that locates a character in a string
 				/return null if not found/
 						return ('\0');
 }
+
