@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - finds and prints the first 98 Fibonacci numbers,
- * starting with 1 and 2
- * followed by a new line
- * Return: ALways 0 (Success)
+ * main - a program that finds and prints the first 98 Fibonacci numbers,
+ * starting with 1 and 2, followed by a new line
+ * Return: 0 always
  */
 int main(void)
 {
@@ -36,8 +35,6 @@ int main(void)
 		k2 = k2 + j2;
 		j2 = k2 - j2;
 	}
-
 	printf("\n");
-
 	return (0);
 }

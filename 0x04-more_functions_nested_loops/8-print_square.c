@@ -1,25 +1,35 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * print_square - prints a square, followed by a new line;
- * @size: size of the square
+ * print_square - function that prints 10 times the numbers, from 0 to 14
+ * @size: parameter
+ * Return: returns nothing
  */
+
 void print_square(int size)
 {
+	int i = 0, j;
+
 	if (size <= 0)
 	{
 		_putchar('\n');
-	} else
+	}
+	else
 	{
-		int i, j;
-
-		for (i = 0; i < size; i++)
+		while (i < size)
 		{
-			for (j = 0; j < size; j++)
+			j = 0;
+
+			while (j < size)
 			{
 				_putchar('#');
+
+				j++;
 			}
 			_putchar('\n');
+
+			i++;
 		}
 	}
 }

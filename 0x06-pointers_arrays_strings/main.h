@@ -1,20 +1,3 @@
-
-besthor
-/
-alx-low_level_programming
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-alx-low_level_programming/0x06-pointers_arrays_strings/main.h
-@besthor
-besthor a function that prints an integer
- 1 contributor
-Executable File  22 lines (19 sloc)  551 Bytes
 #ifndef MAIN_H_INCLUDED
 #define MAIN_H_INCLUDED
 
