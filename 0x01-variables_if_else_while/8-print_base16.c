@@ -1,23 +1,17 @@
 #include <stdio.h>
 /**
- * main - print if the number is positive, zero, or negative
- *
- * Descrption: using the main function
- * this program prints "Programming is positive, zero, or negative
- * Return: 0
+ * main-program entry point.
+ * Return: 0 if no error, non zero if error.
  */
 int main(void)
 {
-	char c;
+	int i;
+	char hexvalues[] = "0123456789abcdef";
 
-	for (c = '0' ; c <= '9' ; c++)
+	for (i = 0; i < 16; i++)
 	{
-		putchar(c);
+		putchar(hexvalues[i]);
 	}
-	for (c = 'a' ; c <= 'f' ; c++)
-	{
-		putchar(c);
-}
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }

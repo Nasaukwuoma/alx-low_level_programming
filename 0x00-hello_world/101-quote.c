@@ -1,12 +1,8 @@
-#include <stdio.h>
 #include <unistd.h>
-
 /**
- * main - print the string in the put function
+ *main-program entry point.
  *
- * Description: using the main function
- * this program prints "and that piece of art is useful - Dora Korpar
- * Return: 0
+ *Return: 1 on success.
  */
 int main(void)
 {

@@ -1,31 +1,38 @@
 #include <stdio.h>
 /**
- * main - print single digit numbers
- *
- * Description: print single digits numbers with commas
- * Return: always return 0
+ *main-program entry point.
+ *Return:0 success, non zero fail
  */
 int main(void)
 {
-	int i;
-	int j;
+	int i, k = '0', j;
 
-	for (i = 10; i <= 19; i++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		for (j = 10; j <= 19; j++)
+		for (j = k; j <= '9'; j++)
 		{
-			if ((j % 10) > (i % 10))
+			if (i != j)
 			{
-				putchar((i % 10) + '0');
-				putchar((j % 10) + '0');
-				if (i != 18 || j != 19)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(i);
+				putchar(j);
+			}
+			if (i == j)
+			{
+				continue;
+			}
+			if (i == '8' && j == '9')
+			{
+				break;
+			}
+			else
+			{
+				putchar(',');
+				putchar(' ');
 			}
 		}
+		k++;
 	}
 	putchar('\n');
 	return (0);
 }
+
